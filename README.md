@@ -1,2 +1,24 @@
-# e-commerce-churn-prediction-ml
-E-Commerce Customer Churn Prediction ML Project: Built a predictive model and engineered key delivery quality features (a major churn driver), improving performance to a ROC AUC of 0.6180 using a Python/XGBoost pipeline.
+# E-Commerce 고객 이탈 예측 ML 프로젝트
+
+## 1. 프로젝트 개요 및 목표
+
+본 프로젝트는 Kaggle의 브라질 전자상거래 데이터를 기반으로 **고객 이탈을 예측**하는 머신러닝 모델을 개발하여 이탈 고객을 예측하고 이에 따른 전략 수립을 지원하는 개별 프로젝트입니다.
+
+* **주요 기술:** Python, Scikit-learn, **XGBoost Classifier**, Pandas.
+* **최종 성능:** **ROC AUC Score: 0.6180** 달성.
+* **산출물:** 성능 검증 완료된 `xgboost_churn_model_auc_0.6180.pkl` 모델 아티팩트 저장 및 관리.
+
+## 2. 핵심 분석 및 비즈니스 인사이트
+
+### A. 모델 성능 및 기술적 기여
+
+* **목표:** 고객 이탈을 예측하여 선제적인 고객 유지 전략 실행을 지원.
+* **기여:** XGBoost Classifier를 중심으로 모델 실험을 진행하고, 재사용 가능한(Reusable) ML 파이프라인 구조를 설계하여 학습 및 평가 과정을 자동화.
+* **결과:** ROC AUC 0.6180의 예측 성능을 바탕으로, 이탈 확률이 높은 고객 식별 및 CRM 시스템 연동 가능성을 확보했습니다.
+
+### B. 비즈니스 전략 및 이탈 동인 확정
+
+* **분석:** 모델의 특성 중요도(Feature Importance) 분석 결과, 고객 이탈의 핵심 요인은 구매 빈도/금액이 아닌 **'배송 지연' 등 물류 및 서비스 품질** 요인으로 확정됨.
+* **전략 제안:**
+    1.  **관리 우선순위:** 이탈 방지 전략의 우선순위를 **배송 지연율이 높은 고객 그룹**에게 집중하도록 설정.
+    2.  **자원 투입:** 이탈 예측 결과를 바탕으로 물류 시스템 안정화에 자원을 집중 투입할 것을 제안.
